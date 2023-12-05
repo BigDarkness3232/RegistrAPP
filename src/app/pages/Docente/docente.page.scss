@@ -1,0 +1,108 @@
+ion-content{
+
+    --background: #ffff;
+
+}
+
+ion-toolbar,ion-card-header{
+
+  --background: #012c56;
+  --color: #ffff;
+
+ 
+
+}
+.ion-button{
+  width: 250px; 
+  margin-left: auto;
+
+}
+ion-card{
+
+    --background: #ffff;
+    border-radius: 15px;
+
+}
+
+ion-list{
+
+   background: #ffff;
+
+}
+
+div{
+
+  --background :#ffff;
+  overflow-y: auto;
+}
+ion-item{
+
+--background: #ffff;
+--color: #17202A;
+
+}
+
+ion-input{
+
+  --color: #17202A;
+
+}
+
+ion-card-header{
+    
+    --color: #D4AC0D;
+   
+   }
+
+div{
+
+ --background :#ffff;
+
+}
+
+.hola{
+
+    color :#17202A;
+
+}
+
+  @media (max-width: 450px) {
+    ion-card,.id {
+      max-width: 450px; // Ajustar el maximo de ancho
+      margin: 0 auto;
+      position: relative;
+      top: 10px; // Ajustar posicion (espacio) desde arriba.
+    }
+}
+
+table {
+  border-collapse: collapse;
+  overflow: scroll;
+}
+
+thead tr {
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+thead td {
+  font-weight: 700;
+}
+
+td {
+  padding: .5rem 1rem;
+  font-size: .9rem;
+  color: #222;
+}
+
+tr td:last-child {
+  display: flex;
+  align-items: center;
+}
+
+
+.tabla-responsiva {
+  width: 100%;
+  overflow-y: auto;
+}
+

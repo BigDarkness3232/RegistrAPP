@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>RegistroAPP</ion-title>
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <img alt="Silhouette of mountains" src="assets/img/logo.png" />
+    <ion-card-content>
+     
+    </ion-card-content >
+
+    <ion-card-header>
+      <ion-card-title>Inicio De Sesion</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+          <ion-input [clearInput]="true" label="Correo" [(ngModel)]="email" labelPlacement="floating"></ion-input>
+        </ion-item>
+        <br>
+        <ion-item>
+          <ion-input [clearOnEdit]="true" type="password" label="Contraseña" [(ngModel)]="contrasena" labelPlacement="floating"></ion-input>
+        </ion-item>
+
+      <ion-label (click)="olvidar()">¿Olvido Su Contraseña?</ion-label>
+      <br>
+      <ion-button (click)="ingresar()" fill=outline color="tertiary" type="submit">
+        Ingresar
+      </ion-button>
+      <br>
+      <ion-label (click)="redireccionar()">¿No Tienes Cuenta? Registrate Aqui</ion-label>
+      <br>
+      <ion-label (click)="mapa()"> conoce nuestra sede </ion-label>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,48 @@
+ion-content{
+
+    --background: #ffff;
+
+}
+
+ion-toolbar{
+
+ 
+   --background: #012c56;
+   --color: #ffff;
+
+}
+
+ion-card{
+
+--background: #ffff;
+
+}
+
+ion-card-title{
+    
+ --color: #D4AC0D;
+
+}
+
+ion-item{
+
+    border-radius: 15px;
+    --color: #17202A;
+    --background: #ffff;
+    border: solid 1px #012c56;
+}
+
+@media (max-width: 800px) {
+    ion-card {
+      max-width: 800px; // Ajustar el maximo de ancho
+      margin: 0 auto;
+      position: relative;
+      top: 180px; // Ajustar posicion (espacio) desde arriba.
+    }
+}
+
+@media (max-width: 350px) {
+    h1 {
+        font-size: small;
+    }
+}

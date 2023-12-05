@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Zona Horaria</ion-title>
+    <ion-back-button slot="start"></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+
+
+  <div *ngIf="respuesta">
+   
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Hora Actual</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>La hora actual según tu IP pública es: {{ respuesta.datetime
+        }}</p>
+        <p>Tu IP : {{respuesta.client_ip}}</p>
+        <p>Dia de la semana :{{respuesta.day_of_week}}</p>
+        <p>Zona horaria: {{ respuesta.timezone }}</p>
+        <p>Offset UTC: {{ respuesta.utc_offset }}</p>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  
+</ion-content>

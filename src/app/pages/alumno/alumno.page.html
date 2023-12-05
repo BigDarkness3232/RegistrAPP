@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>RegistroAPP</ion-title>
+    <ion-button slot="end" fill="clear" color="danger" (click)="cerrar()">Cerrar sesión</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <h1>Bienvenido : {{nombre}}</h1>
+    </ion-card-header>
+<br>
+    <ion-label color="warning" (click)="horaria()">
+      Conoce tu Zona Horaria
+    </ion-label>
+
+    <ion-card-content>
+      <ion-label>
+       Agregar Digitos de Asignaturas
+      </ion-label>
+    </ion-card-content>
+
+
+    <ion-card-content>
+      <ion-input [(ngModel)]="codigoQR" placeholder="Ingresa los dígitos del QR" clearInput></ion-input>
+    </ion-card-content>
+
+    <ion-card-content>
+      <ion-button (click)="procesarCodigoQR()" fill="clear">
+        Ingresar
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
