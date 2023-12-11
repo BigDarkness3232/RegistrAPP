@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>RegistroAPP</ion-title>
+    <ion-back-button slot="start"></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ <ion-card>
+  <img alt="Silhouette of mountains" src="assets/img/logo.png" />
+
+  <ion-card-header>
+    <ion-card-title>Restablecer Contraseña</ion-card-title>
+  </ion-card-header>
+  
+  <ion-card-content>
+    <form [formGroup]="usuario">
+      <ion-input formControlName="email" type="email" label="Correo" labelPlacement="floating" helperText=" "
+        placeholder="Ingrese su correo" errorText="Ingrese un correo"></ion-input>
+      <ion-button (click)="validar()" type="submit" expand="full" color="success"
+        [disabled]="usuario.invalid">Restablecer contraseña</ion-button>
+    </form>
+    <label for="">Necesitas mas ayuda? Dirigete a nuestra sede</label>
+  </ion-card-content>
+ </ion-card>
+</ion-content>

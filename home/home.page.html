@@ -1,0 +1,25 @@
+
+
+<ion-content class="img">
+  <ion-tabs>
+    <ion-tab-bar>
+
+     <ion-tab-button tab="registro" *ngIf="usuario.perfil == 'Admin'"> 
+      <ion-icon name="book"></ion-icon>
+     </ion-tab-button>
+
+     <ion-tab-button tab="alumno" *ngIf="usuario.perfil == 'Alumno'">
+      <ion-icon name="star"></ion-icon>
+     </ion-tab-button>
+
+     <ion-tab-button tab="docente" *ngIf="usuario.perfil == 'Docente'">
+      <ion-icon name="star"></ion-icon>
+     </ion-tab-button>
+    </ion-tab-bar>
+
+  </ion-tabs>
+
+ 
+
+
+</ion-content>

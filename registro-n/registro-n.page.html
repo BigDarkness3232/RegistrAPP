@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>RegistroAPP</ion-title>
+    <ion-back-button slot="start"></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-card>
+    <ion-card-header>
+      <h1>Registro Usuario</h1>
+    </ion-card-header>
+
+    <ion-card-content>
+      
+      <form [formGroup]="usuario" >
+        <ion-item id="rut">
+          <ion-label position="stacked">Rut</ion-label>
+          <ion-input formControlName="rut" type="text" placeholder="Ingrese rut"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Nombre</ion-label>
+          <ion-input formControlName="nombre" type="text" placeholder="Ingrese su nombre"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Ap. Paterno</ion-label>
+          <ion-input formControlName="ap_paterno" type="text" placeholder="Ingrese su ap. paterno"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Fecha nacimiento</ion-label>
+          <ion-input formControlName="fecha_nac" type="date"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Contraseña</ion-label>
+          <ion-input formControlName="contrasena" type="password" placeholder="Ingrese su Contraseña"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Confirmar Contraseña</ion-label>
+          <ion-input formControlName="confirmar_contrasena" type="password" placeholder="Repita su Contraseña"></ion-input>
+        </ion-item>
+
+         <br>
+         <h1>Su correo es generado automaticamente es  NOMBRE.APELLIDO@duocuc.cl</h1>
+
+
+        <ion-button [disabled]="usuario.controls.contrasena.value != usuario.controls.confirmar_contrasena.value || usuario.invalid " expand="block" (click)="GuardarUsu()">Registrar</ion-button>
+        <ion-button color="dark" expand="block" type="reset" >Limpiar</ion-button>
+        
+
+      
+      </form>
+    </ion-card-content>
+  </ion-card>
